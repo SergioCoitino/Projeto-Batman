@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+body {
+    background-image: url("https://th.bing.com/th/id/R.a8852f0fce651b18469cbeb3938d24a8?rik=PUSQiOd0S3%2f1cw&pid=ImgRaw&r=0");
+}
+.header1 {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+    background-color: #0006;
+}
+
+nav {
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+}
+
+li:hover {
+    color: red;
+}
+header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.gallery-items {
+    width: 340px;
+    height: 340px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #0009;
+    flex-grow: 1;
+    transition: transform .5s linear;
+}
+.gallery-items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-items:hover {
+    transform: scale(1.3);
+
+}
+.personagem {
+    width: 100%;
+    height: 0;
+    padding: 0 0 10px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    height: 100px;
+    margin-top: 50px;
+}
+.footer-navigation {
+    display:none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .header1 {
+        display: none;
+    }
+}

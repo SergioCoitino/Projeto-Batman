@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Roboto&family=Rubik:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url("https://th.bing.com/th/id/R.a8852f0fce651b18469cbeb3938d24a8?rik=PUSQiOd0S3%2f1cw&pid=ImgRaw&r=0");
+}
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0006;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+    font-family: Heebo;
+    font-size: 40px;
+    color: #f6f6f6;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+}
+.card .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15x;
+}
+.card h3 {
+    font-family: Rubik;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.stars {
+    width: 70px;
+}
+p {
+    margin-top: 0;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+}
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+    height: 100px;
+    margin-top: 50px;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 92%;
+    }
+}
